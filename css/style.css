@@ -102,6 +102,14 @@ a:hover {
   width: 100%;
 }
 
+.sub-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 h1 {
   font-family: 'scala_sans_scbold';
   font-size: 1.25em;
@@ -240,22 +248,23 @@ h2 {
 }
 
 .event-title {
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: normal;
-  margin-top: 20px;
+  color: rgb(207, 213, 179);
 }
 
 .event-type, .event-openers {
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .event-openers {
   margin-top: .5em;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+  color: rgb(207, 213, 179);
 }
 
 .event-info {
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .event-type, .event-title, .event-info, .event-openers {
@@ -272,6 +281,7 @@ h2 {
 
 .rotator-item {
   float: left;
+  width: 100%;
 }
 
 .rotator-dots {
