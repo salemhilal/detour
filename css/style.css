@@ -17,7 +17,7 @@
 }
 
 .rotator-item-1 {
-  background-image: url("../img/events/via2013.jpg");
+  background-image: url("../img/events/via2013_test.jpg");
 }
 
  @media
@@ -37,7 +37,7 @@
     }
 
     .rotator-item-1 {
-      background-image: url("../img/events/retina/via2013.jpg");
+      background-image: url("../img/events/retina/via2013_test.jpg");
     }
 }
 
@@ -151,6 +151,13 @@ h2 {
   height: 312px;
 }
 
+.via-logo { 
+  position: absolute;
+  height: 45px;
+  top: 10px;
+  right: 10px;
+}
+
 /* Site Footer
  * ====================================*/
 .colophon {
@@ -224,6 +231,7 @@ h2 {
 .caption-box {
   position: absolute;
   width: 33.333333%;
+  min-width: 325px;
   top: 0;
   left: 30px;
   background-color: rgba(0, 0, 0, .9);
@@ -350,6 +358,7 @@ h2 {
     margin-top: 15px;
   }
 }
+
 
 @media only screen and (max-width: 610px) { /* Should be toggle point */
   .caption-box {
