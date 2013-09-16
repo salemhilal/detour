@@ -138,6 +138,9 @@ h2 {
   margin: 0 auto;
   display: block;
 }
+.logo-wrapper{
+  height: 312px;
+}
 
 /* Site Footer
  * ====================================*/
@@ -310,6 +313,9 @@ h2 {
 
 .logo {
   width:500px;
+}
+.logo-wrapper{ 
+  height: 312px;
 }
 
 @media only screen and (min-width: 1280px) {
