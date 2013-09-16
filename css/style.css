@@ -1,0 +1,369 @@
+/*
+ * Detour Pittsburgh
+ * Site design by Miroslav Azis
+ * Built by Salem Hilal
+ *
+
+
+/* Image backgrounds (They're changed a lot, so they're up top)
+   ====================================*/
+
+.featured-event {
+  background-image: url("../img/events/french_fries.jpg");
+}
+
+.rotator-item-2 {
+  background-image: url("../img/events/jphlip.jpg");
+}
+
+.rotator-item-1 {
+  background-image: url("../img/events/via2013.jpg");
+}
+
+ @media
+ only screen and (-webkit-min-device-pixel-ratio: 2),
+ only screen and (   min--moz-device-pixel-ratio: 2),
+ only screen and (     -o-min-device-pixel-ratio: 2/1),
+ only screen and (        min-device-pixel-ratio: 2),
+ only screen and (                min-resolution: 192dpi),
+ only screen and (                min-resolution: 2dppx) { 
+
+    .featured-event {
+      background-image: url("../img/events/retina/french_fries_retina.jpg");
+    }
+
+    .rotator-item-2 {
+      background-image: url("../img/events/retina/jphlip_retina.jpg");
+    }
+
+    .rotator-item-1 {
+      background-image: url("../img/events/retina/via2013_retina.jpg");
+    }
+   }
+
+
+
+/* Fonts
+ * ====================================*/
+
+/* Scala Sans Bold SC*/
+@font-face {
+    font-family: 'scala_sans_scbold';
+    src: url('scalasans-boldsc-webfont.eot');
+    src: url('scalasans-boldsc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('scalasans-boldsc-webfont.woff') format('woff'),
+         url('scalasans-boldsc-webfont.ttf') format('truetype'),
+         url('scalasans-boldsc-webfont.svg#scala_sans_scbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Scala Sans Regular*/
+@font-face {
+    font-family: 'scala_sans_lfregular';
+    src: url('scalasans-regularlf-webfont.eot');
+    src: url('scalasans-regularlf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('scalasans-regularlf-webfont.woff') format('woff'),
+         url('scalasans-regularlf-webfont.ttf') format('truetype'),
+         url('scalasans-regularlf-webfont.svg#scala_sans_lfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* General layout
+ * ====================================*/
+
+body {
+  margin-top: 30px;
+}
+
+p {
+  font-family: 'scala_sans_lfregular';
+  font-size: .9em;
+  color: #333;
+
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(207, 213, 179);
+  text-decoration: underline;
+}
+
+/* Wraps the grid */
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'scala_sans_scbold';
+  font-size: 1.25em;
+  font-weight: normal;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'scala_sans_scbold';
+  font-size: 1em;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+/* Site Header
+ * ====================================*/
+.menu {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  font-size: 1.1em;
+  font-family: "scala_sans_scbold";
+  font-weight: normal;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* Site logo */
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Site Footer
+ * ====================================*/
+.colophon {
+  font-family: "scala_sans_lfregular";
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.colophon hr {
+  width: 40%;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* About
+ * ====================================*/
+
+.about-text {
+  margin: 30px 0;
+}
+.about-text p {
+  font-size: 1.1em;
+}
+
+.member-bio {
+  box-sizing: border-box;
+  padding-left:30px;
+  padding-right: 30px;
+}
+
+.bio-pic img {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 195px;
+}
+
+
+/* Site section boxes
+ * ====================================*/
+
+ /* General */
+.section-box {
+  /*box-shadow: inset 0 19px 45px 0px #000;*/
+  position: relative;
+  height: 350px;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+/* Top shadow */
+.section-box-shadow {
+  /*display: none;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section-box-shadow.single {
+  position:relative;
+}
+
+/* Caption */
+.caption-box {
+  position: absolute;
+  width: 33.333333%;
+  top: 0;
+  left: 30px;
+  background-color: rgba(0, 0, 0, .9);
+  color: #efefef;
+  box-sizing: border-box;
+  padding: 45px 15px;
+}
+
+/* Lower-right-hand-corner icon */
+.up-icon {
+  font-size: 1.3em;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: white;
+  height: 20px;
+  width: 20px;
+  z-index: 9999;
+}
+
+.event-title {
+  font-family: 'scala_sans_scbold';
+  text-transform: 'lowercase';
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.event-title a{
+  color: rgb(207, 213, 179);
+}
+.event-type, .event-openers {
+  font-family: 'scala_sans_lfregular';
+  font-size: .8em;
+}
+
+.event-type a {
+  color: white;
+}
+
+.event-openers {
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.event-info {
+  font-family: 'scala_sans_scbold';
+  font-size: .8em;
+}
+
+.event-info a, .event-openers a{
+  font-weight: bold;
+  color: white;
+}
+
+.event-type, .event-title, .event-info, .event-openers {
+  text-transform: uppercase;
+}
+
+/* Rotator stuff
+ * ====================================*/
+
+.rotator {
+  overflow: hidden;
+  position: relative;
+}
+
+.rotator-item {
+  float: left;
+}
+
+.rotator-dots {
+  width:200px;
+  position: absolute;
+  text-align: right;
+  right: 70px;
+  bottom: 20px;
+}
+
+.rotator-dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: 3px solid white;
+          border-radius: 50%;
+     -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-left: 8px;
+}
+
+.rotator-dot.active {
+  background-color: white;
+}
+
+/* Media Query-able Rules
+ * ====================================*/
+
+.logo {
+  width:500px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .rotator, .rotator-item, .container {
+    width: 1280px;
+  }
+}
+
+@media only screen and (min-width:960px) and (max-width: 1279px) {
+  .rotator, .rotator-item, .container {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .rotator, .rotator-item, .container {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rotator, .rotator-item, .container {
+    width: 100%;
+  }
+
+  .about-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .member-bio {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 610px) { /* Should be toggle point */
+  .caption-box {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .bio-pic, .member-bio {
+    width: 100%;
+  }
+
+  .bio-pic img {
+    display: block;
+    margin: 0 auto;
+  }
+}
