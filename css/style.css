@@ -204,7 +204,6 @@ h2 {
 
  /* General */
 .section-box {
-  /*box-shadow: inset 0 19px 45px 0px #000;*/
   position: relative;
   height: 350px;
   background-size: cover;
@@ -214,13 +213,14 @@ h2 {
 
 /* Top shadow */
 .section-box-shadow {
-  /*display: none;*/
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/shadow.png");
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .section-box-shadow.single {
