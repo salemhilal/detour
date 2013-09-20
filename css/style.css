@@ -74,12 +74,13 @@
 /* General layout
  * ====================================*/
 
-body {
-  margin-top: 30px;
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+  font-family: 'scala_sans_lfregular', sans-serif;
 }
 
 p {
-  font-family: 'scala_sans_lfregular';
   font-size: .9em;
   color: #333;
 
@@ -146,7 +147,10 @@ h2 {
 
 /* Site logo */
 .logo {
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   display: block;
 }
 .logo-wrapper{
@@ -190,6 +194,7 @@ h2 {
 
 .member-bio {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-left:30px;
   padding-right: 30px;
 }
